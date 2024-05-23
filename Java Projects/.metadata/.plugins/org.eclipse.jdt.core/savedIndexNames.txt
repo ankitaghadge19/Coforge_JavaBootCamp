@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+F:\Coforge-Java Technical Training\Java Projects\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1027275919.index
+3413725848.index

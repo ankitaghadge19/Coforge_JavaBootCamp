@@ -1,0 +1,46 @@
+package com.java.prgs;
+import java.util.Scanner;
+
+public class Book {
+    // Properties of the Book class
+    private int bookId;
+    private String title;
+    private float price;
+    
+
+    public Book(int bookId, String title, float price) {
+        this.bookId = bookId;
+        this.title = title;
+        this.price = price;
+    }
+
+    public void displayBookDetails() {
+        System.out.println("Book ID: " + bookId);
+        System.out.println("Title: " + title);
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Taking user input for bookId
+        System.out.print("Enter Book ID: ");
+        int bookId = scanner.nextInt();
+        scanner.nextLine(); // Consume newline
+
+        // Taking user input for title
+        System.out.print("Enter Book Title: ");
+        String title = scanner.nextLine();
+        
+        // Taking user input for title
+        System.out.print("Enter Book Price: ");
+        float price = scanner.nextFloat();
+
+        // Creating a Book object
+        Book book = new Book(bookId, title, price);
+
+        // Displaying the book details
+        book.displayBookDetails();
+
+        scanner.close();
+    }
+}

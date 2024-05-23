@@ -1,0 +1,10 @@
+package com.java.prgs;
+
+class A{} 
+class B{}
+public class MultiClass {
+
+	public static void main(String[] args) {
+		System.out.println("Inside MultiClass!");
+	}
+}
