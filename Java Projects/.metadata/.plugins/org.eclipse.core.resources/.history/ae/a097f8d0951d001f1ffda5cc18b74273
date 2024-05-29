@@ -1,0 +1,20 @@
+package com.java.collections;
+import java.util.List;
+import java.util.ArrayList;
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+		List<String> data = new ArrayList<>();
+		data.add("A");
+		data.add("B");
+		data.add(null);
+		data.add("B");
+		data.add("C");
+		
+		for(int i=0; i<data.size(); i++) {
+			String str = data.get(i);
+			System.out.println(str);
+		}
+	}
+}

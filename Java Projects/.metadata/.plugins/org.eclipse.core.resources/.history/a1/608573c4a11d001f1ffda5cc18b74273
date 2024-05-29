@@ -1,0 +1,44 @@
+package com.java.collections;
+import java.util.HashSet;
+import java.util.Set;
+
+class BookDetails{
+	int id;
+	String title;
+	double price;
+	
+	public BookDetails() {
+		
+	}
+	
+     public BookDetails( int id, String title, double price) {
+    	 this.id = id;
+    	 this.title = title;
+    	 this.price = price;
+	}
+     
+     // Override toString() method for better readability when printing Book objects
+     @Override
+     public String toString() {
+         return "Book [id=" + id + ", title=" + title + ", price=" + price + "]";
+     }
+}
+
+public class UserDefinedHashSet {
+
+	public static void main(String[] args) {
+		
+		Set<BookDetails> bookSet = new HashSet<>();
+		
+		// Add books to the HashSet
+		bookSet.add(new Book(1, "Java", 100));
+		bookSet.add(new Book(2, "Python", 150));
+		bookSet.add(new Book(3, "C++", 120));
+        
+		// Iterate over the HashSet
+        for(Book book: bookSet) {
+        	System.out.println(book);
+        }
+	}
+
+}

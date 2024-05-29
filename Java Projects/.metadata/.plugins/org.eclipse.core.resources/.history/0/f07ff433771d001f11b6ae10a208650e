@@ -1,0 +1,16 @@
+package com.java.prgs;
+
+public class String_StringBuffer_StringBuilder {
+
+	public static void main(String[] args) {
+		String str = "Hello";
+		System.out.println(str.hashCode());
+		str += "World!";
+		System.out.println(str.hashCode());
+		System.out.println(str);
+		
+		
+
+	}
+
+}
