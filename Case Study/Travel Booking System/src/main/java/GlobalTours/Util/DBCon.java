@@ -13,7 +13,6 @@ public class DBCon {
         String user = "root";
         String password = "1234";
         try {
-            // Load the new MySQL JDBC driver (optional, for clarity and backward compatibility)
             Class.forName("com.mysql.cj.jdbc.Driver");
             // Establish the connection
             con = DriverManager.getConnection(url, user, password);
