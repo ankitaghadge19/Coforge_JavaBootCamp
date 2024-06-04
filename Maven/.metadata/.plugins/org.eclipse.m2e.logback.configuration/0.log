@@ -16,3 +16,18 @@
 2024-05-31 20:50:57,367 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Coforge-Java Technical Training\Maven\com.hello.mavensonar\src\main\resources
 2024-05-31 20:50:57,373 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2024-05-31 20:50:57,373 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Coforge-Java Technical Training\Maven\com.hello.mavensonar\src\test\resources
+2024-06-04 09:18:31,009 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-06-04 09:28:01,510 [Worker-20: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' F:\Coforge-Java Technical Training\Maven\JDBC_Connectivity\pom.xml
+2024-06-04 09:28:13,280 [Worker-20: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: maven:JDBC_Connectivity:0.0.1-SNAPSHOT @ F:\Coforge-Java Technical Training\Maven\JDBC_Connectivity\pom.xml.
+2024-06-04 09:28:20,226 [Worker-20: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /JDBC_Connectivity/src/main/java
+2024-06-04 09:28:20,249 [Worker-20: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /JDBC_Connectivity/src/test/java
+2024-06-04 09:28:20,484 [Worker-20: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 18 sec
+2024-06-04 09:28:23,220 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-06-04 09:28:23,220 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Coforge-Java Technical Training\Maven\JDBC_Connectivity\src\main\resources
+2024-06-04 09:28:23,226 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-06-04 09:28:23,227 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Coforge-Java Technical Training\Maven\JDBC_Connectivity\src\test\resources
+2024-06-04 09:29:39,586 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-06-04 09:29:39,586 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Coforge-Java Technical Training\Maven\JDBC_Connectivity\src\main\resources
+2024-06-04 09:29:39,589 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-06-04 09:29:39,590 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Coforge-Java Technical Training\Maven\JDBC_Connectivity\src\test\resources
+2024-06-04 09:56:17,973 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

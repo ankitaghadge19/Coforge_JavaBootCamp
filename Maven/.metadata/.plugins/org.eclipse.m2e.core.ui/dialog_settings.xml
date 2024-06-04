@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="F:\Coforge-Java Technical Training\Maven"/>
 			<item value="F:\Coforge-Java Technical Training\Maven Projects"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,12 +27,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="maven.JDBC_Connectivity"/>
 			<item value="sonar.com.hello.mavensonar"/>
 		</list>
 		<list key="groupId">
+			<item value="maven"/>
 			<item value="sonar"/>
 		</list>
 		<list key="artifactId">
+			<item value="JDBC_Connectivity"/>
 			<item value="com.hello.mavensonar"/>
 		</list>
 		<list key="projectNameTemplate">
