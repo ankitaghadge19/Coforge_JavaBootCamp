@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>GlobalTours</groupId>
-    <artifactId>TravelBookingSystem</artifactId>
+    <artifactId>BankApplication</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -28,4 +28,5 @@
             <version>8.0.28</version>
         </dependency>
     </dependencies>
+
 </project>

@@ -1,7 +1,10 @@
-package GlobalTours.Auth;
+package GlobalTours.Index;
 
 import java.sql.SQLException;
 import java.util.Scanner;
+
+import GlobalTours.Auth.Login;
+import GlobalTours.Auth.Register;
 import GlobalTours.Models.User;
 
 public class Main {

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.org/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!-- Mapping for SavingAccount entity -->
+    <class name="Account.SavingAccount" table="saving_account">
+        <id name="accNo"/>
+        <property name="custName"/>
+        <list name="deposits" table="deposit" cascade="all">
+            <!-- Foreign key mapping -->
+            <key column="accNo"/>
+            <index column="deposit_index"/>
+            <element column="amount" type="integer"/>
+        </list>
+    </class>
+</hibernate-mapping>
