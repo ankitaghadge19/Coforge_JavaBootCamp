@@ -1,10 +1,25 @@
 package GlobalTours.Models;
 
+import java.util.List;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "user")
 public class User {
 
-    String name;
-    String emailId;
-    String password;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    private String name;
+
+    private String emailId;
+
+    private String password;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<BookTicket> bookings;
 
     public User() {}
 
@@ -45,9 +60,17 @@ public class User {
         this.password = password;
     }
 
+    public List<BookTicket> getBookings() {
+        return bookings;
+    }
+
+    public void setBookings(List<BookTicket> bookings) {
+        this.bookings = bookings;
+    }
+
     @Override
     public String toString()
     {
-        return "User [emailId=" + emailId + ", name=" + name + ", password=" + password+ "]";
+        return "User [emailId=" + emailId + ", name=" + name + ", password=" + password+"]";
     }
 }

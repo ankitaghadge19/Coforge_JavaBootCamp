@@ -13,7 +13,6 @@ public class Register  {
     public int add(User user)
             throws SQLException
     {
-
         String query = "insert into User(name, emailId, password) VALUES (?, ?, ?)";
         PreparedStatement ps = con.prepareStatement(query);
         ps.setString(1, user.get_name());

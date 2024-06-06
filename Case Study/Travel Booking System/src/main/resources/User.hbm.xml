@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="GlobalTours.Models.User" table="users">
+        <id name="id">
+            <generator class="increment"/>
+        </id>
+        <property name="name"/>
+        <property name="emailId"/>
+        <property name="password"/>
+        <set name="bookings" table="bookings" cascade="all">
+            <key column="userId"/>
+            <one-to-many class="GlobalTours.Models.BookTicket"/>
+        </set>
+    </class>
+</hibernate-mapping>
