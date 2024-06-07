@@ -1,9 +1,6 @@
-package CRUD;
+package CRUD.PreparedStatement;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.Scanner;
 
 public class InsertRecord {
@@ -30,13 +27,17 @@ public class InsertRecord {
 
         sc.close();
 
+        String sqlInsert = "INSERT INTO STUDENT (sid, fname, lname, course) VALUES (?, ?, ?, ?)";
+
         try (Connection con = DriverManager.getConnection(dbUrl, username, password);
-             Statement stmt = con.createStatement()) {
+             PreparedStatement pstmt = con.prepareStatement(sqlInsert)) {
 
-            String sqlCreate = String.format("INSERT INTO STUDENT (sid, fname, lname, course) " +
-                                             "VALUES (%d, '%s', '%s', '%s')", sid, fname, lname, course);
+            pstmt.setInt(1, sid);
+            pstmt.setString(2, fname);
+            pstmt.setString(3, lname);
+            pstmt.setString(4, course);
 
-            stmt.executeUpdate(sqlCreate);
+            pstmt.executeUpdate();
             System.out.println("Record added in Student table!");
 
         } catch (SQLException e) {

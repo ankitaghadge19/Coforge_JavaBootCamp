@@ -1,9 +1,6 @@
-package CRUD;
+package CRUD.PreparedStatement;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.Scanner;
 
 public class DeleteRecord {
@@ -21,12 +18,14 @@ public class DeleteRecord {
 
         sc.close();
 
+        String sqlDelete ="DELETE FROM STUDENT WHERE sid = ?";
+
         try (Connection con = DriverManager.getConnection(dbUrl, username, password);
-             Statement stmt = con.createStatement()) {
+             PreparedStatement pstmt = con.prepareStatement(sqlDelete)) {
 
-            String sqlCreate = String.format("DELETE FROM STUDENT WHERE sid=%d", sid);
+            pstmt.setInt(1, sid);
 
-            stmt.executeUpdate(sqlCreate);
+            pstmt.executeUpdate();
             System.out.println("Record deleted from the Student table!");
 
         } catch (SQLException e) {

@@ -1,4 +1,4 @@
-package CRUD;
+package CRUD.CreateStatement;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class UpdateRecord {
+public class InsertRecord {
     static final String dbUrl = "jdbc:mysql://localhost:3306/coforgedata";
     static final String username = "root";
     static final String password = "1234";
@@ -33,10 +33,10 @@ public class UpdateRecord {
         try (Connection con = DriverManager.getConnection(dbUrl, username, password);
              Statement stmt = con.createStatement()) {
 
-            String sqlCreate = String.format("UPDATE STUDENT SET fname='%s', lname='%s', course='%s' WHERE sid=%d", fname, lname, course, sid);;
+            String sqlInsert = String.format("INSERT INTO STUDENT (sid, fname, lname, course) VALUES (%d, '%s', '%s', '%s')", sid, fname, lname, course);
 
-            stmt.executeUpdate(sqlCreate);
-            System.out.println("Record updated in Student table!");
+            stmt.executeUpdate(sqlInsert);
+            System.out.println("Record added in Student table!");
 
         } catch (SQLException e) {
             e.printStackTrace();

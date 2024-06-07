@@ -1,10 +1,6 @@
-package CRUD;
+package CRUD.PreparedStatement;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class SelectRecord {
     static final String dbUrl = "jdbc:mysql://localhost:3306/coforgedata";
@@ -13,12 +9,12 @@ public class SelectRecord {
 
     public static void main(String[] args) {
 
+        String sqlSelect = "SELECT * FROM STUDENT";
+
         try (Connection con = DriverManager.getConnection(dbUrl, username, password);
-             Statement stmt = con.createStatement()) {
+             PreparedStatement pstmt = con.prepareStatement(sqlSelect)) {
 
-            String sqlSelect = "SELECT * FROM STUDENT";
-
-            ResultSet rs = stmt.executeQuery(sqlSelect);
+            ResultSet rs = pstmt.executeQuery(sqlSelect);
 
             while (rs.next()) {
                 int sid = rs.getInt("sid");
