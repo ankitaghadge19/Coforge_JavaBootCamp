@@ -8,19 +8,18 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 import GlobalTours.Models.User;
+import java.util.List;
 
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "bookings")
 public class BookTicket {
-    private static Map<String, Integer> routeCostMap = new HashMap<>();
-
-    static {
-        routeCostMap.put("Pune-Mumbai", 300);
-        routeCostMap.put("Nashik-Pune", 400);
-        routeCostMap.put("Pune-Nagpur", 200);
-    }
+    private static Map<String, Integer> routeCostMap = new HashMap<String, Integer>() {{
+        put("Pune-Mumbai", 300);
+        put("Nashik-Pune", 400);
+        put("Pune-Nagpur", 200);
+    }};
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,7 +29,7 @@ public class BookTicket {
 
     private String destination;
 
-    private int cost;
+    private float cost;
 
     private String date;
 
@@ -81,7 +80,7 @@ public class BookTicket {
         this.destination = destination;
     }
 
-    public int getCost() {
+    public float getCost() {
         return cost;
     }
 
@@ -145,5 +144,15 @@ public class BookTicket {
         transaction.commit();
         session.close();
         return true;
+    }
+
+    public static List<BookTicket> getAllBookings(User user, SessionFactory sessionFactory) {
+        Session session = sessionFactory.openSession();
+        String hql = "FROM BookTicket WHERE user = :user";
+        Query query = session.createQuery(hql);
+        query.setParameter("user", user);
+        List<BookTicket> bookings = query.list();
+        session.close();
+        return bookings;
     }
 }

@@ -7,8 +7,7 @@ import GlobalTours.Models.User;
 import GlobalTours.Util.DBCon;
 
 public class Register  {
-    static Connection con
-            = DBCon.getConnection();
+    static Connection con = DBCon.getConnection();
 
     public int add(User user)
             throws SQLException

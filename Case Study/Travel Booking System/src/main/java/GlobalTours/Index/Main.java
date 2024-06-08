@@ -1,6 +1,7 @@
 package GlobalTours.Index;
 
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Scanner;
 
 import GlobalTours.Auth.Login;
@@ -32,7 +33,8 @@ public class Main {
             System.out.println("1) Register");
             System.out.println("2) Login");
             System.out.println("3) Book Ticket");
-            System.out.println("4) Exit");
+            System.out.println("4) View My Bookings");
+            System.out.println("5) Exit");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -93,6 +95,27 @@ public class Main {
                     break;
 
                 case 4:
+                    if (loggedInUser == null) {
+                        System.out.println("You need to login first!");
+                        break;
+                    }
+                    List<BookTicket> bookings = BookTicket.getAllBookings(loggedInUser, sessionFactory);
+                    if (bookings.isEmpty()) {
+                        System.out.println("No bookings found.");
+                    } else {
+                        System.out.println("Your Bookings:");
+                        for (BookTicket booking : bookings) {
+                            System.out.println("Ticket ID: " + booking.getTicketId() +
+                                    ", Source: " + booking.getSource() +
+                                    ", Destination: " + booking.getDestination() +
+                                    ", Date: " + booking.getDate() +
+                                    ", Time: " + booking.getTime() +
+                                    ", Cost: " + booking.getCost());
+                        }
+                    }
+                    break;
+
+                case 5:
                     System.out.println("Exited!");
                     scanner.close();
                     sessionFactory.close();
