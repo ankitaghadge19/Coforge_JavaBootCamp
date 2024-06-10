@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 import GlobalTours.Auth.Login;
 import GlobalTours.Auth.Register;
+import GlobalTours.Models.Booking;
 import GlobalTours.Models.User;
-import GlobalTours.Models.BookTicket;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -86,7 +86,7 @@ public class Main {
                     System.out.print("Enter time (hh:mm): ");
                     String time = scanner.nextLine();
 
-                    BookTicket ticket = new BookTicket(source, destination, date, time, loggedInUser);
+                    Booking ticket = new Booking(source, destination, date, time, loggedInUser);
                     if (ticket.book(sessionFactory)) {
                         System.out.println("Ticket booked successfully! Cost: " + ticket.getCost());
                     } else {
@@ -99,13 +99,13 @@ public class Main {
                         System.out.println("You need to login first!");
                         break;
                     }
-                    List<BookTicket> bookings = BookTicket.getAllBookings(loggedInUser, sessionFactory);
+                    List<Booking> bookings = Booking.getAllBookings(loggedInUser, sessionFactory);
                     if (bookings.isEmpty()) {
-                        System.out.println("No bookings found.");
+                        System.out.println("No bookings found!");
                     } else {
                         System.out.println("Your Bookings:");
-                        for (BookTicket booking : bookings) {
-                            System.out.println("Ticket ID: " + booking.getTicketId() +
+                        for (Booking booking : bookings) {
+                            System.out.println("Booking ID: " + booking.getBookingId() +
                                     ", Source: " + booking.getSource() +
                                     ", Destination: " + booking.getDestination() +
                                     ", Date: " + booking.getDate() +

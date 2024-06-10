@@ -19,7 +19,7 @@ public class User {
     private String password;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<BookTicket> bookings;
+    private List<Booking> bookings; // Changed from BookTicket
 
     public User() {}
 
@@ -60,11 +60,11 @@ public class User {
         this.password = password;
     }
 
-    public List<BookTicket> getBookings() {
+    public List<Booking> getBookings() { // Changed from BookTicket
         return bookings;
     }
 
-    public void setBookings(List<BookTicket> bookings) {
+    public void setBookings(List<Booking> bookings) { // Changed from BookTicket
         this.bookings = bookings;
     }
 

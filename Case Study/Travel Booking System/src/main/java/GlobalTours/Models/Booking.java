@@ -14,7 +14,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "bookings")
-public class BookTicket {
+public class Booking {
     private static Map<String, Integer> routeCostMap = new HashMap<String, Integer>() {{
         put("Pune-Mumbai", 300);
         put("Nashik-Pune", 400);
@@ -23,7 +23,7 @@ public class BookTicket {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int ticketId;
+    private int bookingId;
 
     private String source;
 
@@ -42,10 +42,10 @@ public class BookTicket {
     private User user;
 
 
-    public BookTicket() {
+    public Booking() {
     }
 
-    public BookTicket(String source, String destination, String date, String time, User user) {
+    public Booking(String source, String destination, String date, String time, User user) {
         this.source = source;
         this.destination = destination;
         this.cost = routeCostMap.getOrDefault(source + "-" + destination, 0);
@@ -56,12 +56,12 @@ public class BookTicket {
     }
 
     // Getters and Setters
-    public int getTicketId() {
-        return ticketId;
+    public int getBookingId() {
+        return bookingId;
     }
 
-    public void setTicketId(int ticketId) {
-        this.ticketId = ticketId;
+    public void setBookingId(int ticketId) {
+        this.bookingId = ticketId;
     }
 
     public String getSource() {
@@ -125,13 +125,13 @@ public class BookTicket {
         Transaction transaction = session.beginTransaction();
 
         // Check if the user already has a booking for the same route, date, and time
-        String hql = "FROM BookTicket WHERE source = :source AND destination = :destination AND date = :date AND time = :time";
+        String hql = "FROM Booking WHERE source = :source AND destination = :destination AND date = :date AND time = :time";
         Query query = session.createQuery(hql);
         query.setParameter("source", this.source);
         query.setParameter("destination", this.destination);
         query.setParameter("date", this.date);
         query.setParameter("time", this.time);
-        BookTicket existingBooking = (BookTicket) query.uniqueResult();
+        Booking existingBooking = (Booking) query.uniqueResult();
 
         if (existingBooking != null) {
             transaction.commit();
@@ -146,12 +146,12 @@ public class BookTicket {
         return true;
     }
 
-    public static List<BookTicket> getAllBookings(User user, SessionFactory sessionFactory) {
+    public static List<Booking> getAllBookings(User user, SessionFactory sessionFactory) {
         Session session = sessionFactory.openSession();
-        String hql = "FROM BookTicket WHERE user = :user";
+        String hql = "FROM Booking WHERE user = :user";
         Query query = session.createQuery(hql);
         query.setParameter("user", user);
-        List<BookTicket> bookings = query.list();
+        List<Booking> bookings = query.list();
         session.close();
         return bookings;
     }

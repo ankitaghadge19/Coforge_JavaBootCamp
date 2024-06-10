@@ -17,6 +17,6 @@
 
         <!-- Mapping annotated entity classes -->
         <mapping class="GlobalTours.Models.User"/>
-        <mapping class="GlobalTours.Models.BookTicket"/>
+        <mapping class="GlobalTours.Models.Booking"/>
     </session-factory>
 </hibernate-configuration>

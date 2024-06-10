@@ -1,0 +1,91 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!-- Constuctor Based DI -->
+    <!-- Call Default Constructor: -->
+    <!-- <bean id="ticket" class="DependencyInjection.ConstructorBased.Models.Ticket"/> -->
+
+    <bean id = "ticket" class = "DependencyInjection.ConstructorBased.Models.Ticket">
+        <constructor-arg index = "0" value = "101"/>
+        <constructor-arg index = "1" value = "24/9/2019"/>
+        <!--<constructor-arg index = "1" value = "24/9/2019"/>-->
+    </bean>
+
+    <!-- Setter Based DI -->
+    <bean id="student" class="DependencyInjection.SetterBased.Models.Student">
+        <property name="id">
+            <value>101</value>
+        </property>
+        <property name="name">
+            <value>Rubby Bell</value>
+        </property>
+        <property name="course">
+            <value>Spring Course</value>
+        </property>
+    </bean>
+
+    <!-- Inner Beans-->
+    <bean id="invoicebean" class="DependencyInjection.InnerBeans.Models.InvoiceGenerator">
+        <constructor-arg>
+            <bean class="DependencyInjection.InnerBeans.Models.Product">
+                <property name="item" value="EarPods"/>
+                <property name="price" value="1200"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+
+    <!-- Injecting Collection -->
+    <bean id="productdetails" class="DependencyInjection.InjectingCollection.Models.ProductDetails">
+        <property name="name" value="Mobile Phone" />
+        <property name="qty" value="5" />
+        <property name="price" value="45390.50" />
+    </bean>
+    <bean id="product" class="DependencyInjection.InjectingCollection.Models.Product">
+        <property name="lists">
+            <list>
+                <value>1</value>
+                <ref bean="productdetails" />
+                <bean class="DependencyInjection.InjectingCollection.Models.ProductDetails">
+                    <property name="name" value="ProductList" />
+                    <property name="qty" value="28" />
+                    <property name="price" value="280.70" />
+                </bean>
+            </list>
+        </property>
+        <property name="sets">
+            <set>
+                <value>1</value>
+                <ref bean="productdetails" />
+                <bean class="DependencyInjection.InjectingCollection.Models.ProductDetails">
+                    <property name="name" value="ProductSets" />
+                    <property name="qty" value="28" />
+                    <property name="price" value="280.70" />
+                </bean>
+            </set>
+        </property>
+        <property name="maps">
+            <map>
+                <entry key="Key 1" value="1" />
+                <entry key="Key 2" value-ref="productdetails" />
+                <entry key="Key 3">
+                    <bean class="DependencyInjection.InjectingCollection.Models.ProductDetails">
+                        <property name="name" value="ProductMap" />
+                        <property name="qty" value="28" />
+                        <property name="price" value="330.56" />
+                    </bean>
+                </entry>
+            </map>
+        </property>
+        <property name="props">
+            <props>
+                <prop key="tech">technical@domain.com</prop>
+                <prop key="logistic">logistic@domain.com</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
