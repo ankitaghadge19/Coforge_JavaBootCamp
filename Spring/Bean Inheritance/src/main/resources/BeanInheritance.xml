@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="BaseBook" class="BeanInheritance.Models.Book">
+        <property name="publisher" value="Technical" />
+    </bean>
+    <bean id="CPP" parent="BaseBook">
+        <property name="BookId" value="101" />
+        <property name="Bookname" value="C++" />
+    </bean>
+    <bean id="JAVA" parent="BaseBook">
+        <property name="BookId" value="102" />
+        <property name="Bookname" value="JAVA" />
+    </bean>
+</beans>

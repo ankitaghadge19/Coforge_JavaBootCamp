@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="126dbfa3-deaa-4a50-9d50-6118bee8d1c6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/ConstructorBased/Models/Ticket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/ConstructorBased/TicketMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/InjectingCollection/CollectionMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/InjectingCollection/Models/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/InjectingCollection/Models/ProductDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/InnerBeans/Models/InvoiceGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/InnerBeans/Models/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/InnerBeans/Shopping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/SetterBased/Models/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/SetterBased/StudentMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/resources/Beans.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2hjKeIFbNugGcKevvCuf5hMvqNu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "F:/Coforge-Java Technical Training/Spring/BeanInheritance/src/main/java/BeanInheritance/Main.java"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="126dbfa3-deaa-4a50-9d50-6118bee8d1c6" name="Changes" comment="" />
+      <created>1718102144452</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718102144452</updated>
+    </task>
+    <servers />
+  </component>
+</project>

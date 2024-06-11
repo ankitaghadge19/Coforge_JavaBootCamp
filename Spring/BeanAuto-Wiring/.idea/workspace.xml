@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f946cc65-ecf3-4ae1-90c8-d283c7431d81" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/BeanAutoWiring/ByName/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BeanAutoWiring/ByType/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BeanAutoWiring/Models/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/BeanAutoWiring/Models/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ByName.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BeanLifeCycle/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BeanLifeCycle/src/main/java/BeanLifeCycle/CustomerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BeanLifeCycle/src/main/java/BeanLifeCycle/Models/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BeanLifeCycle/src/main/java/PostProcessor/BeanInitProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BeanLifeCycle/src/main/java/PostProcessor/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BeanLifeCycle/src/main/java/PostProcessor/Models/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BeanLifeCycle/src/main/resources/Beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BeanLifeCycle/src/main/resources/PostProcessorBean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BeanScopes/src/main/java/Prototype/Models/PrototypeBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BeanScopes/src/main/java/Prototype/Models/PrototypeBeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BeanScopes/src/main/java/Prototype/PrototypeMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BeanScopes/src/main/java/Singleton/Models/SingletonBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BeanScopes/src/main/java/Singleton/Models/SingletonBeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BeanScopes/src/main/java/Singleton/SingletonMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/ConstructorBased/Models/Ticket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/ConstructorBased/TicketMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/InjectingCollection/CollectionMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/InjectingCollection/Models/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/InjectingCollection/Models/ProductDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/InnerBeans/Models/InvoiceGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/InnerBeans/Models/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/InnerBeans/Shopping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/SetterBased/Models/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/java/DependencyInjection/SetterBased/StudentMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringDemo/src/main/resources/Beans.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2hjOwoB3oIqGyO2fE5IGL9dOoNJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "F:/Coforge-Java Technical Training/Spring/BeanAuto-Wiring/src/main/java/BeanAuto-Wiring/Main.java"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f946cc65-ecf3-4ae1-90c8-d283c7431d81" name="Changes" comment="" />
+      <created>1718104267604</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718104267604</updated>
+    </task>
+    <servers />
+  </component>
+</project>
