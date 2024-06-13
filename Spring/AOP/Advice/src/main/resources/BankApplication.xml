@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Definition of BankService bean -->
+    <bean id="BankService" class="Advice.BankApplication.Models.BankService">
+        <property name="accountNumber" value="123456789" />
+        <property name="balance" value="1000.0" />
+    </bean>
+
+    <!-- Definition of the advices -->
+    <bean id="logBeforeMethod" class="Advice.BankApplication.Advices.Before" />
+    <bean id="logAfterReturningMethod" class="Advice.BankApplication.Advices.AfterReturning" />
+    <bean id="logAfterThrowingMethod" class="Advice.BankApplication.Advices.Throw" />
+<!--<bean id="logAfterFinallyMethod" class="Advice.BankApplication.Advices.After"/>-->
+    <bean id="logAroundMethod" class="Advice.BankApplication.Advices.Around" />
+
+    <!-- Proxy configuration to apply the advices to the bankService bean -->
+    <bean id="BankServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="BankService" />
+        <property name="interceptorNames">
+            <list>
+                <value>logBeforeMethod</value>
+                <value>logAfterReturningMethod</value>
+                <value>logAfterThrowingMethod</value>
+           <!-- <value>logAfterFinallyMethod</value> -->
+                <value>logAroundMethod</value>
+            </list>
+        </property>
+    </bean>
+</beans>

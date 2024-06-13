@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Definition for address bean -->
+    <bean id="address" class="CheckDependency.Models.Address">
+        <property name="city" value="Pune" />
+        <property name="state" value="Maharashtra" />
+    </bean>
+
+    <!-- Definition for person bean with dependency on address bean -->
+    <bean id="person" class="CheckDependency.Models.Person" depends-on="address">
+        <property name="name" value="Ankita" />
+        <property name="address" ref="address" />
+    </bean>
+</beans>
