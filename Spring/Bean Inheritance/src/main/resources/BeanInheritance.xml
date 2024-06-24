@@ -3,14 +3,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="BaseBook" class="BeanInheritance.Models.Book">
+    <bean id="Publisher" class="BeanInheritance.Models.Book">
         <property name="publisher" value="Technical" />
     </bean>
-    <bean id="CPP" parent="BaseBook">
+    <bean id="CPP" parent="Publisher">
         <property name="BookId" value="101" />
         <property name="Bookname" value="C++" />
     </bean>
-    <bean id="JAVA" parent="BaseBook">
+    <bean id="JAVA" parent="Publisher">
         <property name="BookId" value="102" />
         <property name="Bookname" value="JAVA" />
     </bean>

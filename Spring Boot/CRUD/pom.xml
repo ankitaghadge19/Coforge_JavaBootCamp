@@ -10,11 +10,11 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>SpringBoot</groupId>
-	<artifactId>SpringBoot</artifactId>
+	<groupId>CRUD</groupId>
+	<artifactId>CRUD</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringBoot</name>
-	<description>Spring Boot Project</description>
+	<name>CRUD</name>
+	<description>CRUD operation in SpringBoot</description>
 
 	<properties>
 		<java.version>17</java.version>
