@@ -1,0 +1,4 @@
+<!ELEMENT Employee(empid,empname,empdesg)>
+<!ELEMENT empid(#PCDATA)>
+<!ELEMENT empname(#PCDATA)>
+<!ELEMENT empdesg(#PCDATA)>

@@ -1,0 +1,81 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+
+    <tlib-version>2.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    
+    <tag>
+        <name>add</name>
+        <tag-class>ArithmeticOperations.AdditionTagHandler</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>num1</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>double</type>
+        </attribute>
+        <attribute>
+            <name>num2</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>double</type>
+        </attribute>
+    </tag>
+    
+    <tag>
+        <name>sub</name>
+        <tag-class>ArithmeticOperations.SubstractTagHandler</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>num1</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>double</type>
+        </attribute>
+        <attribute>
+            <name>num2</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>double</type>
+        </attribute>
+    </tag>
+    
+    <tag>
+        <name>product</name>
+        <tag-class>ArithmeticOperations.ProductTagHandler</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>num1</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>double</type>
+        </attribute>
+        <attribute>
+            <name>num2</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>double</type>
+        </attribute>
+    </tag>
+    
+    <tag>
+        <name>division</name>
+        <tag-class>ArithmeticOperations.DivisionTagHandler</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>num1</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>double</type>
+        </attribute>
+        <attribute>
+            <name>num2</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>double</type>
+        </attribute>
+    </tag>
+    
+</taglib>
