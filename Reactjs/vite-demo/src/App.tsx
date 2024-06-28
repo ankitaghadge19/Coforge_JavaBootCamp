@@ -8,7 +8,6 @@ return (
 <Heading title={"Practice!"}/>
 <Counter/>
 </>
-
 )
 }
  
