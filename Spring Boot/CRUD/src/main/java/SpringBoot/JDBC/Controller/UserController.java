@@ -42,12 +42,4 @@ public class UserController {
         userservice.saveOrUpdate(user);
         return user.getId();
     }
-
-    /*
-     * @RequestMapping("/insert") public String index() {
-     *
-     * jdbc.execute("insert into user(name,email) values('Manisha','m@gmail.com')");
-     *
-     * return "Row inserted successfully"; }
-     */
 }
