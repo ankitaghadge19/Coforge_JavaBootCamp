@@ -1,56 +1,40 @@
 import React, { useState } from 'react';
-
 import axios from 'axios';
 
- 
-
 const TaskForm = () => {
-
   const [title, setTitle] = useState('');
-
   const [description, setDescription] = useState('');
 
- 
-
   const handleSubmit = (e) => {
-
     e.preventDefault();
-
     const newTask = { title, description };
 
     axios.post('http://localhost:5000/api/tasks', newTask)
-
       .then((response) => {
-
         console.log(response.data);
-
-        // Update the task list with the new task
-
+        // Add the new task to the list
       })
-
       .catch((error) => console.error(error));
-
   };
 
- 
-
   return (
-
     <div>
-
       <h2>Add New Task</h2>
-
       <form onSubmit={handleSubmit}>
-
-        {/* ... Form fields ... */}
-
+        <div>
+          <label>Title:</label>
+          <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+        </div>
+        <div>
+          <label>Description:</label>
+          <textarea value={description} onChange={(e) => setDescription(e.target.value)} />
+        </div>
+        <div>
+          <button type="submit">Add Task</button>
+        </div>
       </form>
-
     </div>
-
   );
-
 };
-
 
 export default TaskForm;
