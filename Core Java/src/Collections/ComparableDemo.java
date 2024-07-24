@@ -46,8 +46,8 @@ class Employee implements Comparable<Employee>{
     }
     
     @Override
-    public int compareTo(Employee o) {
-    	return this.joiningDate.compareTo(o.joiningDate);
+    public int compareTo(Employee obj) {
+    	return this.joiningDate.compareTo(obj.joiningDate);
     }
     
     @Override

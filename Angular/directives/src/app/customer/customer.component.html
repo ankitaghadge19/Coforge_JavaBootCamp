@@ -1,0 +1,21 @@
+<p
+appColors
+[ngClass] = "{'profession-style' : customer.profession}"
+>
+<u>CUSTOMER</u><br>
+name : <span [textContent] ="customer.name"></span><br>
+purchased_on : {{customer.purchased_on | date: 'MMM dd, yyyy'| uppercase}}<br>
+profession: <span *ngIf = "customer.profession; then prof else notprof"></span><br>
+<ng-template #prof>&check;</ng-template>
+<ng-template #notprof>&#10005;</ng-template>
+<span id="butt" class="d-grid gap-2 col-12">
+    <button id="show" class="btn btn-outline-primary">SHOW MORE</button>
+    <button
+    id="delete"
+    class="btn btn-outline-danger"
+    (click) = "onDelete($event,customer.name)"
+    >DELETE</button>
+</span>
+ 
+ 
+</p>

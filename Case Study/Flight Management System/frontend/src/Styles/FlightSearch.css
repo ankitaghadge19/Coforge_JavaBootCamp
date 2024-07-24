@@ -1,0 +1,70 @@
+/* FlightSearch.css */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-top: 0px;
+}
+
+.search-form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.search-form .form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-form .form-control {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 3px;
+}
+
+.table-bordered {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #aca6a6;
+  padding: 8px;
+}
+
+.table-bordered th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.table-bordered tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-bordered tr:hover {
+  background-color: #ddd;
+}
+
+.button {
+  background-color: #3d3d3d;;
+  border: 1px solid #000000;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.button:hover {
+  background-color: #434343;
+  border-color: #333333;
+}
