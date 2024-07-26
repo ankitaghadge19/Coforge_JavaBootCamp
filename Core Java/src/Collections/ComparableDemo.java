@@ -14,7 +14,6 @@ class Employee implements Comparable<Employee>{
         this.name = name;
         this.salary = salary;
         this.joiningDate = joiningDate;
-
 	}
 	
 	public int getId() {
