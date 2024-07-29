@@ -5,39 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5b905ac-ad2d-46a3-bb9d-ac8ad29d1933" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Hibernate/Mapping/Many To Many/.idea/Many To Many.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit/TestCases/src/main/java/TestCases/Calculator/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit/TestCases/src/test/java/Addition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Junit/TestCases/src/test/java/CalculatorTC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservices/SpringBoot/Microservice/src/main/java/SpringBoot/Microservices/TextResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservices/SpringBoot/PaymentMicroservice/src/main/java/SpringBoot/PaymentMicroservice/Controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservices/SpringBoot/PaymentMicroservice/src/main/java/SpringBoot/PaymentMicroservice/DTO/PaymentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservices/SpringBoot/PaymentMicroservice/src/main/java/SpringBoot/PaymentMicroservice/DTO/PaymentResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservices/SpringBoot/PaymentMicroservice/src/main/java/SpringBoot/PaymentMicroservice/Entity/PaymentEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservices/SpringBoot/PaymentMicroservice/src/main/java/SpringBoot/PaymentMicroservice/Repository/PaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservices/SpringBoot/PaymentMicroservice/src/main/java/SpringBoot/PaymentMicroservice/Service/PaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case Study/Flight Management System/FlightManagementSystem/backend/src/main/java/FlightBookingSystem/Auth/Controller/UserManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Case Study/Flight Management System/FlightManagementSystem/backend/src/main/java/FlightBookingSystem/Auth/Controller/UserManagementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case Study/Flight Management System/FlightManagementSystem/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Case Study/Flight Management System/FlightManagementSystem/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case Study/Flight Management System/FlightManagementSystem/frontend/src/Layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Case Study/Flight Management System/FlightManagementSystem/frontend/src/Layout/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case Study/Flight Management System/FlightManagementSystem/frontend/src/pages/Auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Case Study/Flight Management System/FlightManagementSystem/frontend/src/pages/Auth/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case Study/Flight Management/FlightBookingSystem/src/main/java/FlightBookingSystem/Auth/Config/CorsConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case Study/Flight Management/FlightBookingSystem/src/main/java/FlightBookingSystem/Auth/Config/JWTAuthFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case Study/Flight Management/FlightBookingSystem/src/main/java/FlightBookingSystem/Auth/Config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case Study/Flight Management/FlightBookingSystem/src/main/java/FlightBookingSystem/Auth/Controller/UserManagementController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case Study/Flight Management/FlightBookingSystem/src/main/java/FlightBookingSystem/Auth/DTO/ReqRes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case Study/Flight Management/FlightBookingSystem/src/main/java/FlightBookingSystem/Auth/Entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case Study/Flight Management/FlightBookingSystem/src/main/java/FlightBookingSystem/Auth/Repository/UserRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case Study/Flight Management/FlightBookingSystem/src/main/java/FlightBookingSystem/Auth/Service/JWTUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case Study/Flight Management/FlightBookingSystem/src/main/java/FlightBookingSystem/Auth/Service/UserManagementService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Case Study/Flight Management/FlightBookingSystem/src/main/java/FlightBookingSystem/Auth/Service/UsersDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Core Java/src/Collections/ComparableDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Core Java/src/Collections/ComparableDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JSP/Authentication" beforeDir="false" afterPath="$PROJECT_DIR$/../JSP/Authentication" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Boot/SpringSecurity/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Boot/SpringSecurity/SpringSecurity.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Boot/SpringSecurity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring Boot/SpringSecurity/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Boot/SpringSecurity/src/main/java/SpringSecurity/Controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Boot/SpringSecurity/src/main/java/SpringSecurity/DTO/RegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring Boot/SpringSecurity/src/main/java/SpringSecurity/DTO/RegistrationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spring Boot/SpringSecurity/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring Boot/SpringSecurity/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +16,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2jh9n6EGGH1KASDGr3mM4Co6b6I" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -60,7 +29,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/Coforge-Java Technical Training/Spring/Bean LifeCycle"
+    "last_opened_file_path": "F:/Coforge-Java Technical Training/Spring/Spring JDBC"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

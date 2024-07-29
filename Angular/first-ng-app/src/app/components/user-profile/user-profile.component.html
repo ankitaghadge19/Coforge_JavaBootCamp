@@ -1,0 +1,33 @@
+<!-- <p>This is user-profile!</p>
+<h4>Name: {{name.toUpperCase()}} Status - {{status}} Salary - {{salary}}</h4>
+
+<button [disabled]=isBtnDisabled>Click</button>
+
+<h1>Input Value - {{inputVal}}</h1>
+
+<input type="text" [(ngModel)]="inputVal">
+
+<div>
+    @for(u of users; track u.name){
+        @if(u.salary > 10000){
+            <h4>Name: {{u.name}} Status - {{u.isSingle?"Single":"Married"}} Salary - {{u.salary}}</h4>
+        }@else{
+            <h4>Name: {{u.name}} Status - {{u.isSingle?"Single":"Married"}} Salary - Not Disclosed</h4>
+        }
+    }
+</div>
+
+<hr/>
+
+<div *ngFor ="let u of users">
+    <h4 *ngIf="u.salary > 10000;else elseBlock">Name: {{u.name}} Status - {{u.isSingle?"Single":"Married"}} Salary - {{u.salary}}</h4>
+    <ng-template #elseBlock>
+        <h4>Name: {{u.name}} Status - {{u.isSingle?"Single":"Married"}} Salary - Not Disclosed</h4>
+    </ng-template>
+</div> -->
+
+<!-- <input type="text" [value]="inputVal" (input)="onChange($event)"> -->
+
+
+<h1>Name - {{name}} Status - {{isSingle?"Single":"Married"}} Salary - {{salary}}</h1>
+<button (click)="sendData()">Send</button>
