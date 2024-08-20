@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": "f876",
+      "department": "Accounts",
+      "name": "test3",
+      "mobile": "9767754276",
+      "email": "ankitaghadge03@gmail.com",
+      "gender": "female",
+      "doj": "2023-11-12",
+      "city": "Pune",
+      "salary": "70000",
+      "address": "Pimple Saudagar",
+      "status": null
+    },
+    {
+      "id": "48da",
+      "department": "Sales",
+      "name": "test1",
+      "mobile": "9767754276",
+      "email": "test1@gmail.com",
+      "gender": "male",
+      "doj": "2020-07-15",
+      "city": "Pune",
+      "salary": "40000",
+      "address": "Pimple Saudagar",
+      "status": true
+    }
+  ]
+}
