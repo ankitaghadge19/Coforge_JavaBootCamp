@@ -33,5 +33,4 @@ public class QuizController {
     public Quiz getById(@PathVariable Long id){
         return quizService.getById(id);
     }
-
 }
